@@ -21,20 +21,87 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+unsigned char find_maximum ( unsigned char *arr, unsigned int size ) ;
+
+ * @brief find the max element of array
  *
- * <Add Extended Description Here>
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return unsigned char : Max element in the array
  */
 
+unsigned char find_maximum ( unsigned char *arr, unsigned int size ) ;
+
+/**
+unsigned char find_minimum ( unsigned char *arr, unsigned int size ) ;
+
+* @brief find the min element of array
+ *
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
+ *
+ * @return unsigned char : Min element in the array
+ */
+unsigned char find_minimum ( unsigned char *arr, unsigned int size ) ;
+
+/**
+void print_statistics( unsigned char min, unsigned char max, unsigned char median, unsigned char mean ) ;
+ * @brief print the statistics of the array
+ *
+ * @param unsigned char min     min element of the array
+ * @param unsigned char max     max element of the array
+ * @param unsigned int  mean    mean of the array
+ * @param unsigned int  median  median of the array
+ *
+ * @return void : no need for return value
+ */
+void print_statistics( unsigned char min, unsigned char max, unsigned int mean, unsigned int median ) ;
+
+/**
+unsigned char find_mean (unsigned char *arr, unsigned int size);
+ * @brief find the mean of array
+ *
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
+ *
+ * @return unsigned int : mean value
+ */
+unsigned int find_mean (unsigned char *arr, unsigned int size);
+
+/**
+unsigned char find_median (unsigned char *arr, unsigned int size);
+ * @brief find the median of array
+ *
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
+ *
+ * @return unsigned int : median value
+ */
+unsigned int find_median (unsigned char *arr, unsigned int size);
+
+/**
+unsigned char* sort_array (unsigned char *arr, unsigned int size);
+ * @brief sot the elements of array descendingly
+ *
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
+ *
+ * @return unsigned char * : sorted array descendingly
+ */
+unsigned char* sort_array (unsigned char *arr, unsigned int size);
+
+/**
+void print_array (unsigned char *arr, unsigned char size) ;
+ * @brief print the elements of array
+ *
+ * @param unsigned char *arr  pointer to the array
+ * @param unsigned int  size  size of the array
+ *
+ * @return void : no need for return value
+ */
+void print_array (unsigned char *arr, unsigned char size) ;
 
 #endif /* __STATS_H__ */
